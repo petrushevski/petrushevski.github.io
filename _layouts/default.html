@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    {% seo title=false %}
+    <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/6835f38456.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="icon" type="image/x-icon" href="{{ "/assets/ficos/f.ico" | prepend: site.baseurl }}">
+	<link rel="icon" type="image/png" href="{{ "/assets/ficos/f-32x32.png" | prepend: site.baseurl }}" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ "/assets/ficos/f-96x96.png" | prepend: site.baseurl }}" sizes="96x96">
+	<link rel="android-chrome" type="image/png" href="{{ "/assets/ficos/ac-196x196.png" | prepend: site.baseurl }}" sizes="196x196">
+    <link rel="apple-touch-icon" type="image/png" href="{{ "/assets/ficos/at-152x152.png" | prepend: site.baseurl }}" sizes="152x152">
+    <link rel="apple-touch-icon" type="image/png" href="{{ "/assets/ficos/at-167x167.png" | prepend: site.baseurl }}" sizes="167x167">
+    <link rel="apple-touch-icon" type="image/png" href="{{ "/assets/ficos/at-180x180.png" | prepend: site.baseurl }}" sizes="180x180">
+	<link rel="mask-icon" href="{{ "/assets/ficos/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#5bbad5">
+    <link rel="manifest" href="{{ "/assets/ficos/site.webmanifest" | prepend: site.baseurl }}">
+	<meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+{{ content }}
+  </body>
+</html>

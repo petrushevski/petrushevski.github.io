@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<header class="site-header">
+  <div class="site-header-container">
+    <img class="site-avatar" src="{{ "/assets/me-512x512.png" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}">
+    <span class="content">
+      <span class="site-title">
+        <span class="site-name">{{ site.author.name }}</span>
+        <span class="site-description">{{ site.description }}</span>
+        <div class="site-links">
+          {% for item in site.links %}
+          <a href="{{ item.url }}"><i class="{{ item.class }}"></i><span class="link-text">{{ item.name }}</span></a>{% endfor %}
+        </div>
+      </span>
+  </div>
+</header>
