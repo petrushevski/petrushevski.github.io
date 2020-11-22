@@ -5,6 +5,7 @@ source 'https://rubygems.org/'
 gem 'github-pages'
 gem 'liquid-c'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "kramdown", ">= 2.3.0"
 
 group :development do
   gem 'jekyll-redirect-from'
