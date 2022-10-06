@@ -7,8 +7,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.1)
     coffee-script (2.4.1)
       coffee-script-source
@@ -25,10 +25,12 @@ GEM
       http_parser.rb (~> 0.6.0)
     ethon (0.12.0)
       ffi (>= 1.3.0)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     execjs (2.7.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
+    ffi (1.13.1)
     ffi (1.13.1-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
@@ -68,7 +70,7 @@ GEM
       jekyll-theme-time-machine (= 0.1.1)
       jekyll-titles-from-headings (= 0.5.3)
       jemoji (= 0.11.1)
-      kramdown (>= 2.3.0)
+      kramdown (= 1.17.0)
       liquid (= 4.0.3)
       mercenary (~> 0.3)
       minima (= 2.5.1)
@@ -94,7 +96,7 @@ GEM
       i18n (~> 0.7)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 2.0)
-      kramdown (>= 2.3.0)
+      kramdown (~> 1.14)
       liquid (~> 4.0)
       mercenary (~> 0.3.3)
       pathutil (~> 0.9)
@@ -208,6 +210,7 @@ GEM
     minitest (5.14.1)
     multipart-post (2.1.1)
     nokogiri (1.11.0.rc2-x64-mingw32)
+    nokogiri (1.11.0.rc2-x86_64-linux)
     octokit (4.18.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -257,22 +260,22 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
-    wdm (0.1.1)
     zeitwerk (2.3.1)
 
 PLATFORMS
   x64-mingw32
-  ruby
+  x86_64-linux
+
 DEPENDENCIES
   github-pages
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-tagsgenerator
+  kramdown
   liquid-c
   rake
   rubocop (~> 0.87.0)
-  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.1.4
